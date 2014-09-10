@@ -1,0 +1,54 @@
+This is just a jot-note of some of the tasks that I think are involved in the 
+project.  I'm probably missing things, and there are probably other ways to
+break it down, but here, at least, is my take:
+
+- Peruse the dataset to understand what we have (everyone)
+
+- write a cleaner script.  Input is the set of html files depicting products,
+	output is a csv file.
+
+- implement NaiveBayes
+- implement SVM
+- implement LDA
+
+- synchronize on a training / testing program that could be applied accross
+	for each classifier -- For example, if we all do 10-fold cross-validation,
+	we'll be able to directly compare the results from different classifiers
+	and comment on which ones performed better.
+
+- For each classification method, train the classifier and test it's 
+	performance, for example using cross-validation.  The output here would be
+	graphic(s) (plot) characterizing performance, and a few paragraphs of
+	commentary:
+
+	- any decisions made during implementation of the classifier
+		(sometimes there may be alternative ways to implement a given 
+		classifier).
+		- decisions about how to represent the data
+		- parameter choices
+		- etc 
+
+	- describe how training was done, and any decisions made
+		- for example, preprocessing the data (other than cleaning)
+		- or feature-selection
+
+	- difficulties encountered, and how they were overcome
+
+	- remarks about performance
+
+- overall editing of the report
+	- write an intro section:
+		describe the dataset, describe the classification task, why its 
+		interesting, and the different ML techniques we chose, and how 
+		they relate.
+	- combine the three analysis sections:
+		just make sure it has consistent formatting.  Coordinate with each
+		content producer to get their part in a good consistent format.
+	- write an overarching summary and analysis, with conclusions
+
+- final editing and packaging of the report
+	- combine the figures and individual writeups into one document
+	- ensure that the data is available (our data should be available for
+		download in csv format) 
+	- etc.
+	- submit
